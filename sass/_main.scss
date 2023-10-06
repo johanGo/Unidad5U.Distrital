@@ -1,0 +1,104 @@
+@use 'variables' as v;
+
+.container-services{
+    width: 90%;
+    max-width: 1140px;
+    margin: -3.2rem auto 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+
+    background-color: blue;
+    img{
+        width: 100%;
+    }
+    div{
+        position: relative;
+        background-color: v.$purple-color;
+        padding: 3rem 1.4rem 4rem;
+        &:nth-child(even){
+            background-color: v.$purple-light;
+            span{
+                background-color: v.$purple-color;
+            }
+        }
+        &:nth-child(4){
+            a{
+                width: 80%;
+                color: v.$purple-dark;
+                background-color: v.$green-color;
+                font-size: 2.2rem;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                padding: 1.3rem 0;
+                position: absolute;
+                bottom: 17%;
+                left: 50%;
+                transform: translateX(-50%);
+                cursor: pointer;
+            }
+        }
+        &:nth-child(5){
+            background-color: v.$purple-dark;
+            grid-column: 2/4;
+        }
+        h2{
+            color: v.$white-color;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            text-align: center;            
+            margin-bottom: 1.6rem;      
+        }
+        img{
+            border-radius: 12px;
+        }
+        span{
+            width: 70%;
+            color: v.$white-color;
+            background-color: v.$purple-dark;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.6rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            padding: 1rem;
+            position: absolute;
+            bottom: 4.8rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    
+}
+
+@media(width < 1200px){
+    .container-services{
+        margin: 3.2rem auto 8rem;
+        grid-template-columns: 1fr 1fr ;
+        div{
+            &:nth-child(5){
+                grid-column: 1/3
+            }
+            &:nth-child(3){
+                background-color: v.$purple-light;
+            }
+            &:nth-child(4){
+                background-color: v.$purple-color;
+            }
+        }
+    }
+}
+@media(width < 670px){
+    .container-services{
+        grid-template-columns: 1fr;
+        div{
+            &:nth-child(5){
+                grid-column: 1/2
+            }
+        }
+    }
+}

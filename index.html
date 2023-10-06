@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es el clon de la pagina de salitre magico">
+    <link rel="icon" type="image/jpg" href="imgs/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Clon Salitre Magico</title>
+    
+</head>
+<body>
+    <header>
+        <img loading="lazy" class="img-logo" src="imgs/logo-salitre.png" alt="icono salitre magico">
+        <nav class="container-options">
+            <ul class="container-elementos">
+                <li>
+                    <a class="atracciones-button" href="#">Atracciones</a>
+                    <div class="container-atractions-hover">
+                        <div class="elment1 elements">
+                            <h3>Atracciones de alto impacto</h3>
+                            <img class="imagen1" src="imgs/main/AltoImpacto.png" alt="imagen de atraccion">
+                            <p>Vive la emoción y siente la adrelalina de forma extrema</p>
+                        </div>
+        
+                        <div class="elment2 elements">
+                            <h3>Atracciones familiares</h3>
+                            <img class="imagen2" src="imgs/main/Familiares2.jpg" alt="imagen de atraccion">
+                            <p>Diviertete en familia y disfruta con los que mas quieres</p>
+                        </div>
+        
+                        <div class="elment3 elements">
+                            <h3>Atracciones infantiles</h3>
+                            <img class="imagen3" src="imgs/main/Infantiles.png" alt="imagen de atraccion">
+                            <p>Comparte un dia de diversión lleno de aventuras</p>
+                        </div>
+        
+                        <ul>
+                            <li><img src="imgs/star.png" alt="imagen estrellita"> Juegos de destreza</li>
+                            <li><img src="imgs/star.png" alt="imagen estrellita"> Mapa del parque</li>
+                            <li><img src="imgs/star.png" alt="imagen estrellita"> Tips para divertirse</li>
+                        </ul>                
+                    </div>
+                </li>
+                <li><a class="visita-button" href="#">Planea tu visita</a></li>
+                <li><a class="festivales-button" href="#">Festival</a></li>
+                <li><a href="#">Horarios</a></li>
+                <li> <a class="grupos-button" href="#">Grupos</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-passport-burguer">
+            <div class="container-passport">
+                <img loading="lazy" class="icon-passport" src="imgs/pasaportes_icon.png" alt="icono pasaporte">
+                <p>Comprar<br> pasaportes</p>
+            </div>
+            <img loading="lazy" class="icon-burguer" src="imgs/burguer.svg" alt="">
+        </div>
+        
+        <img loading="lazy" class="icon-user" src="imgs/cuenta_icono.png" alt="icono usuario">
+    </header>
+
+    <section class="slider">
+        <picture>
+            <source loading="lazy" media="(max-width:800px)" srcset="imgs/slider/webp/img-slider1-mobile.webp , imgs/slider/normal/img-slider1-mobile.png">
+            <source loading="lazy" srcset="imgs/slider/webp/img-slider1-desktop.webp" type="image/webp">
+            <img loading="lazy" src="imgs/slider/normal/img-slider1-desktop.png" alt="atraccion">
+        </picture>
+    </section>
+
+    <main class="container-services"><!--display grid-->
+        <div>
+            <h2>Atracciones de alto impacto</h2>
+            <img loading="lazy" src="imgs/main/AltoImpacto.png" alt="imagen de atraccion">
+            <span>Siente la adrelalina de forma extrema</span>
+        </div>
+        <div>
+            <h2>Atracciones infantiles</h2>
+            <img loading="lazy" src="imgs/main/Infantiles.png" alt="imagen de atraccion">
+            <span>Comparte un dia de diversion lleno de aventuras</span>
+        </div>
+        <div>
+            <h2>Atracciones familiares</h2>
+            <img loading="lazy" src="imgs/main/Familiares.png" alt="imagen de atraccion">
+            <span>Divierte en familia y disfruta con los que mas quieres</span>
+        </div>
+            <div>
+            <h2>Pasaportes</h2>
+            <img loading="lazy" src="imgs/main/bannerpasaportes-01.png" alt="imagen de muñeco">
+            <a href="#"> Mas informacion</a>
+        </div>
+        <div>
+            <h2>Festival del terror 8</h2>
+            <img loading="lazy" src="imgs/main/festival terror.png" alt="imagen festival del terro">
+        </div>
+    </main>
+
+    <section class="container-sponsors">
+        <h2>Aliados / Patrocinadores</h2>
+        <div class="container-logos">
+            <img class="arrow-left" src="imgs/arrow_before.svg" alt="flecha anterior">
+            <img src="imgs/sponsors/logo_avianca.jpg" alt="logo avianca">
+            <img src="imgs/sponsors/logo_cocacola.jpg" alt="logo cocacola">
+            <img src="imgs/sponsors/Sello-02.png" alt="logo sello">
+            <img src="imgs/sponsors/Sello_Mesadetrabajo1.png" alt="logo mesa de trabajo">
+            <img class="arrow-right" src="imgs/arrow_next.svg" alt="flecha siguiente">
+        </div>
+
+        <div class="container-cotizacion">
+            <div class="informacion-cotizacion">
+                <h3>Cotiza con nosotros</h3>
+                <p class="subtitle-cotizacion">¿Quieres realizar un evento? Comunícate con nosotros.</p>
+                <p class="description-cotizacion">Conoce toda nuestra información sobre fiestas infantiles, eventos empresariales, Colegios, Fecha abierta haciendo clic en el botón</p>
+            </div>
+            <a class="button-cotizacion" href="#">Solicita tu cotización</a>
+        </div>
+    </section>
+
+    <footer>
+        <section class="purple-part">
+        
+            <form method="" action="" class="container-boletin">
+                <h2>Unete a nuestro boletin</h2>
+                <p class="description-boletin">Encuentra nuevas noticias cada semana en tu correo</p>
+                <div class="container-inputs">
+                    <input type="email" name="email" id="">
+                    <input type="submit" value="">
+                </div>
+                <p class="politicas">
+                    Al unirte aceptas nuestra <a href="https://www.salitremagico.com.co/paginas/39-aviso-de-privacidad">Política de privacidad</a>
+                </p>
+            </form>
+
+            <div class="container-links">
+                <div class="container-title-arrow">
+                    <h3>Links de interes </h3>
+                    <img loading="lazy" src="imgs/footer/arrow-down.svg" alt="flecha hacia abajo">
+                </div>
+                <ul class="links">
+                    <li>Nuestros aliados</li>
+                    <li>Cotiza tu evento con nosotros</li>
+                    <li> Politicas del parque</li>
+                    <li>Trabaja con nosotros</li>
+                </ul>
+            </div>
+
+            <div class="container-ayuda">
+                <h3>Ayuda</h3>
+                <ul class="ayuda">
+                    <li class="container-call-them">
+                        <img loading="lazy" src="imgs/footer/icon-phone.svg" alt="icono telefono">
+                        <div>                        
+                            <a href="#">Llámanos al<br> PBX (601) 915 6050<br></a>
+                            <p class="days">Horario de atención<br> Lunes a domingo<br> 8:00 am a 5:00pm</p>
+                        </div>
+                    </li>                    
+                    
+                    
+                    <li class="container-contact-them">
+                        <img loading="lazy" src="imgs/footer/icon-mail.svg" alt="icono correo">
+                        <a href="#">Contáctanos<br> contacto@salitremagico.com.co</a>
+                    </li>
+
+                    <li class="container-customer-service">
+                        <img loading="lazy" src="imgs/footer/icon-agente.png" alt="">
+                        <a href="#">Servicio al cliente</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="container-extra-data">
+                <li class="container-location">
+                    <img loading="lazy" src="imgs/footer/icon-mapa.png" alt="icono mapa">
+                    <a href="#">Como llegar</a>
+                </li>
+                <li class="container-tips">
+                    <img loading="lazy" src="imgs/footer/parqueadero.png" alt="icono carro">
+                    <a href="#">Tips del parque</a>
+                </li>
+                <li class="container-schedule">
+                    <img loading="lazy" src="imgs/footer/icon-calendar.svg" alt="icono calendario">
+                    <a href="#">Horarios</a>
+                </li>
+            </ul>
+
+            <div class="container-social-medias">
+                <h3>Siguenos</h3>
+                <div class="social-medias">
+                    <img loading="lazy" src="imgs/footer/icon-twitter.svg" alt="icono twitter">
+                    <img loading="lazy" src="imgs/footer/icon-facebook.svg" alt="icono facebook">
+                    <img loading="lazy" src="imgs/footer/icon-youtube.svg" alt="icono youtube">
+                    <img loading="lazy" src="imgs/footer/icon-instagram.svg" alt="icono instagram">
+                    <img loading="lazy" src="imgs/footer/icon-google-plus.svg" alt="icono google plus">
+                </div>
+            </div>
+        </section>
+
+        <section class="pie-info">
+            <div class="logos-alcaldia">
+                <img src="imgs/footer/escudo_-_nombre_-_ciudad.png" alt="escudo" loading="lazy">
+                <img src="imgs/footer/icono1.png" alt="escudo" loading="lazy">
+                <img src="imgs/footer/iaapa.jpg" alt="icono" loading="lazy">
+                <img src="imgs/footer/acolap.jpg" alt="icono" loading="lazy">
+                <img src="imgs/footer/cie.jpg" alt="icono" loading="lazy">
+            </div>
+            <hr>
+            <div class="container-derechos">
+                <ul>
+                    <li><a href="#">Términos y condiciones tienda virtual</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Todos los derechos reservados ©SALITRE MÁGICO 2018</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

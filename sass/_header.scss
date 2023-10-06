@@ -1,0 +1,214 @@
+@use 'variables' as v;
+
+header{
+    width: 100%;
+    // min-width: 340px;
+    height: 11rem;
+    background-color: v.$purple-color;
+    padding: 0 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6em;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+
+    .img-logo{
+        cursor: pointer;
+    }
+    .container-options{
+        height: 100%;
+        .container-elementos{
+            list-style: none;
+            display: flex;
+            gap: 2.2rem;
+            height: 100%;
+            li{
+                // border: 1px solid;
+                display: flex;
+                align-items: center;     
+                &:hover .container-atractions-hover{
+                    display: flex;
+                    transition: .3s all;
+                }
+
+                a{                   
+                    color: v.$white-dark;
+                    font-size: 1.5rem;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: bold;
+                    text-transform: uppercase;        
+                    text-decoration: none;
+                    position: relative;
+                    cursor: pointer;
+
+                    &:hover{
+                        cursor: pointer;
+                        color: v.$white-color;
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        background-color: v.$green-color;
+                        height: 3px;
+                        width: 0;
+                        left: 0;
+                        bottom: -6px;
+                        transition: all .3s;
+                    }
+                    &:hover:after{                
+                        width: 100%;
+                    }                
+                }
+                .container-atractions-hover{
+                    width: 90%;
+                    background-color: v.$white-color;
+                    margin: 0 auto;
+                    padding: 1rem 3rem 3rem;
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    transform: translateY(100%);
+                    transition: .3s all;
+                    z-index: -10;                       
+                                
+                    .elements{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                        // align-items: center;
+                        // background-color: v.$purple-transparent;
+                        padding: 2rem 1rem;
+                        &:hover{
+                            background-color: v.$purple-transparent;
+                            transition: .3s all;
+                            cursor: pointer;
+                        }
+                        h3{
+                            color: v.$black-color;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            font-size: 1.5rem;
+                            text-transform: uppercase;
+                            // font-weight: normal;
+                        }                        
+                        img{
+                            width: 260px;
+                            height: 150px;
+                            border-radius: 12px;        
+                            margin: 0 auto;            
+                            
+                        }
+                        p{
+                            font-size: 1.5rem;
+                            color: v.$black-light;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        }
+                        .imagen1{
+                            border: 5px solid v.$orange-color;
+                        }
+                        .imagen2{
+                            border: 5px solid v.$yellow-color;
+                        }
+                        .imagen3{
+                            border: 5px solid v.$blue-color;
+                        }
+                    }
+                    ul{
+                        width: 280px;
+                        list-style: none;
+                        // border: 1px solid red;
+                        padding-top: 5rem;
+                        margin-left:4rem;
+                        li{
+                            font-size: 1.5rem;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            color: v.$black-light;
+                            // margin-bottom: 1rem;
+                            padding: 0.9rem 0;
+                            border-bottom: 1px solid v.$black-light;
+                            &:hover{
+                                color:v.$purple-color;
+                                cursor: pointer;
+                            }
+                            img{
+                                margin-right: 1rem;
+                            }      
+                            &:last-of-type{
+                                border: none;
+                            }              
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container-passport-burguer{
+        height: 100%;
+        .container-passport{
+            height: 100%;
+            background-color: v.$black-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    //         width: auto;        
+            padding: 0 1.3rem;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                background-color: v.$black-light;
+            } 
+            p{
+                color: v.$white-color;
+                font-size: 1.6rem; 
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .icon-passport{
+                width: 3.7rem;
+            }        
+        }
+        .icon-burguer{
+            display: none;
+        }
+    }    
+    .icon-user{
+        cursor:pointer;
+    }    
+
+}
+
+@media(width < 1200px){
+    header{
+        gap: 0;
+        height: 9rem;
+        padding: 0 1.6rem;
+        justify-content: space-between;
+        .img-logo{
+            width: 14rem;
+        }        
+        .container-options, .icon-user{
+            display: none;
+        }
+        .container-passport-burguer{
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            .container-passport{
+                p{
+                    font-size: 1.3rem;
+                }
+            }            
+            .icon-burguer{
+                display: block;
+                width:4rem;
+                height: 4rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
